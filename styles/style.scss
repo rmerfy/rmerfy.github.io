@@ -1,0 +1,332 @@
+$blue: #00a3d8;
+$orange: #ffba00;
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #363636;
+}
+
+.btn-m {
+    display: inline-block;
+    text-transform: uppercase;
+    background: $orange;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.40);
+    transition: .3s;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #ffe500;
+    }
+}
+
+.top__bar {
+    .logo {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .col, .col-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+
+    .contacts {
+        font-weight: 700;
+        font-size: 1.2rem;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.menu   {
+    background: $blue;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        li {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: 15px 10px;
+                margin-bottom: 2px;
+                &:hover {
+                    text-decoration: none;
+                    color: #e4f1f2;
+                    border-bottom: 2px solid #e4f1f2;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+}
+
+.block__main{
+    background-image: url(/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 9rem 0;
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.block__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem 0;
+    span {
+        color: $blue;
+    }
+}
+
+.quoet__item {
+    background: $orange;
+    color: #fff;
+    font-size: 1.1em;
+    text-shadow: 2px 3px 4px rgba(0,0,0,0.4), 0px -5px 35px rgba(255,255,255,0.3);
+    border-radius: .2rem;
+    padding: 2rem;
+}
+
+.text__about-us {
+    line-height: 1.2;
+}
+
+.price__item {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.36);
+    transition: .2s;
+    &:hover {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);  
+    }
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        padding-top: 1rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #a50000;
+    }
+    li {
+        list-style-type: none;
+        font-size: 1.1rem;
+    }
+}
+
+.block__recall {
+    background-image: url(/images/bg-recall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    text-align: center;
+    h3 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    #recall {
+        padding: 2rem 0;
+    }
+    h4 {
+        font-size: 2.5rem;
+    }
+}
+
+.block__advantages {
+    .row {
+        padding: 3rem 0;
+    }
+    .col {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        p {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        a {
+            color: #363636;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.block__studios {
+    background-image: url(/images/bg-stydii.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 3rem 0;
+    h3 {
+        font-size: 3rem;
+    }
+    .row a {
+        color: #363636;
+    text-decoration: none;
+    &:hover {
+        color: #363636;
+        text-decoration: none;
+    }
+    }
+    
+    .row {
+        padding: 3rem 0;
+    }
+}
+
+.cheked__item {
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.40);
+    svg {
+        fill: $orange;
+    }
+
+}
+
+.block__our-team {
+    text-align: center;
+    padding: 4rem 0;
+    .row {
+        padding-bottom: 4rem;
+    }
+    img {
+        display: block;
+        width: 90%;
+    }
+    .team_item {
+        height: 450px;
+        .btn-m {
+            position: absolute;
+            bottom: 0;
+            left: 2rem;
+        }
+    }
+}
+
+.block__reviews {
+    margin-bottom: 4rem;
+}
+
+.reviews__item {
+    display: block;
+    margin: 2rem auto;
+    max-width: 800px;
+    p {
+        background: #efefef;
+        padding: 2rem;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    .reviews__author {
+        display: flex;
+        line-height: 0;
+        padding-top: 1rem;
+        align-items: center;
+        margin: 1rem;
+        span {
+            margin-left: 1rem;
+        }
+        img {
+            width: 80px;
+        }
+    }
+    
+}
+
+.dark {
+    background-color: #000 !important
+}
+
+.carousel-style {
+    box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.40);
+    border-radius: 2rem;
+}
+
+.block__trial-lesson {
+    background-image: url(/images/bg-test.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 4rem 0;
+    p {
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+}
+
+.block__instagram {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.block__contacts {
+    background-image: url(/images/bg-contacts.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    padding: 1rem 0;
+    background: #000;
+    color: #fff;
+    li {
+        list-style-type: none;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+            color: #eee;
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}
