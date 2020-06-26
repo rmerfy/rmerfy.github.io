@@ -17,46 +17,48 @@
         <div class="top__bar">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-lg">
                         <img src="/images/logo.webp" alt="logo" class="logo">
                     </div>
-                    <div class="col-5">
-                        <p><i>Свобода — это единственное средство, которое ведёт к наиболее полному развитию характера,
+                    <div class="col-12 col-lg-5 d-none d-sm-block center">
+                            <p class="quote"><i>Свобода — это единственное средство, которое ведёт к наиболее полному развитию характера,
                                 ума и чувств. — Мария Монтессори</i></p>
                     </div>
-                    <div class="col">
+                    <div class="col center">
                         <div class="contacts">
                             <p>г. Долгопрудный</p>
                             <p>8 (916) 271-12-20</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm center">
                         <a href="#" class="btn-m">Перезвони мне</a>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <ul>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Программы</a></li>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">Студии</a></li>
-                            <li><a href="#">Команда</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <button class="navbar-toggler center-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse center-nav" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Программы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Преимущества</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Студии</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Команда</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
             </div>
         </nav>
+        
         <section class="block__main">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col 12 col-lg-8">
                         <h1>Детский сад полного дня
                             по системе Марии Монтессори</h1>
                         <p>Уникальная развивающая среда, индивидуальный подход к
@@ -64,7 +66,7 @@
                             занятия по английскому языку</p>
                         <a href="#" class="btn-m">Получить консультацию</a>
                     </div>
-                    <div class="col d-flex ml-auto">
+                    <div class="col-lg d-none d-lg-flex ml-auto">
                         <ul class="icon-bar">
                             <li><a href="#"><i class="flaticon-facebook"></i></a></li>
                             <li><a href="#"><i class="flaticon-vk-social-logotype"></i></a></li>
@@ -81,16 +83,18 @@
         <h2 class="block__title">НЕМНОГО <span>О НАС</span></h2>
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <iframe width="552" height="552" src="https://www.youtube.com/embed/z3W-HqDv2F4" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="col-12 col-lg-6">
+                    <div class="youtube">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=z3W-HqDv2F4&feature=emb_title">
+                            <img src="/images/youtube.webp" alt="youtube">
+                        </a>
+                    </div>
                     <div class="quoet__item">
                         <p>«Нам потребовалось бы 60 лет напряженного труда, чтобы добиться того, к чему ребенок приходит
                             всего за три первых года своей жизни». — Мария Монтессори</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="text__about-us">
                         <p>Итак, у Вас родился малыш, первые хлопоты позади и Вы задумываетесь о том, нужно ли
                             заниматься с ребенком <em>самостоятельно дома</em>, <em>водить его на занятия</em> в детский
@@ -128,7 +132,7 @@
         <h2 class="block__title">НАШИ <span>ПРОГРАММЫ</span></h2>
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="price__item">
                         <img src="/images/pic0007.webp" alt="mom">
                         <h3>Вместе с мамой</h3>
@@ -142,7 +146,7 @@
                         <a href="#" class="btn-m">Подробнее</a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="price__item">
                         <img src="/images/pic0008.webp" alt="toddler">
                         <h3>Тоддлер</h3>
@@ -156,7 +160,7 @@
                         <a href="#" class="btn-m">Подробнее</a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="price__item">
                         <img src="/images/pic0009.webp" alt="friends">
                         <h3>Среди друзей</h3>
@@ -198,36 +202,36 @@
         <div class="container">
             <h2 class="block__title">ПОЧЕМУ <span>МЫ</span> ?</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-study"></i>
                         <p>Монтессори метод</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-mortarboard"></i>
                         <p>Профессиональные
                             педагоги</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-boy-smiling"></i>
                         <p>Атмосфера уважения</p>
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-kids"></i>
                         <p>Приучение к
                             самостоятельности</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-baby-potty"></i>
                         <p>Приучение к горшку</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm adv-item">
                     <a href="#"><i class="flaticon-family"></i>
                         <p>Регулярное общение
                             с родителями</p>
@@ -242,19 +246,19 @@
             <h3 class="subtitle">СТУДИИ</h3>
             <p class="description">В нашем центре проводятся дополнительные занятия для детей</p>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon01.webp" alt="">
                         <p>Английский язык</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon02.webp" alt="">
                         <p>Запуск и развитие речи</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon03.webp" alt="">
                         <p>Обучение чтению,
@@ -263,20 +267,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon04.webp" alt="">
                         <p>Актёрское мастерство</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon05.webp" alt="">
                         <p>Музыкально-танцевальные
                             занятия</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon06.webp" alt="">
                         <p>Детская йога</p>
@@ -284,19 +288,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon07.webp" alt="">
                         <p>Рисование</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon08.webp" alt="">
                         <p>Лепка из глины</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <a href="#">
                         <img src="/images/icon09.webp" alt="">
                         <p>Бисероплетение</p>
@@ -310,7 +314,7 @@
         <div class="container">
             <h2 class="block__title">НАШИ ДЕТИ <span>УМЕЮТ И ЛЮБЯТ</span></h2>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div id="slider1" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#slider1" data-slide-to="0" class="active"></li>
@@ -342,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <p class="cheked__item"><svg class="bi bi-check" width="4rem" height="4rem" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -372,8 +376,7 @@
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
-                        </svg>Складывать, вычитать, умножать и <br>
-                        <span style="padding-left: 4rem;">делить 4-х значные числа</span>
+                        </svg>Складывать, вычитать, умножать и делить 4-х значные числа
                     </p>
                     <p class="cheked__item"><svg class="bi bi-check" width="4rem" height="4rem" viewBox="0 0 16 16"
                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -419,46 +422,56 @@
         <div class="container">
             <h2 class="block__title">НАША <span>КОМАНДА</span></h2>
             <div class="row">
-                <div class="col">
-                    <div class="team_item">
-                        <img src="images/team1.webp" alt="">
-                        <h4>Худякова Наталья</h4>
-                        <p>Монтессори-педагог 0-3, 3-6 Инструктор по грудничковому плаванию, Детский массажист</p>
-                        <a href="#" class="btn-m">подробнее</a>
-                    </div>
+                <div class="col-12 col-lg">
+                    <div class="card team_item">
+                        <img src="images/team1.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Худякова Наталья</h5>
+                          <p class="card-text">Монтессори-педагог 0-3, 3-6 Инструктор по грудничковому плаванию, Детский массажист</p>
+                          <a href="#" class="btn-m">подробнее</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="col">
-                    <div class="team_item">
-                        <img src="images/team2.webp" alt="">
-                        <h4>Громик Полина</h4>
-                        <p>Преподавание по системе Монтессори в группе Toddler</p>
-                        <a href="#" class="btn-m">подробнее</a>
-                    </div>
+                <div class="col-12 col-lg">
+                    <div class="card team_item">
+                        <img src="images/team2.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Громик Полина</h5>
+                          <p class="card-text">Преподавание по системе Монтессори в группе Toddler</p>
+                          <a href="#" class="btn-m">подробнее</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="col">
-                    <div class="team_item">
-                        <img src="images/team3.webp" alt="">
-                        <h4>Русова Мария</h4>
-                        <p>Нейропсихолог, ведет группы Запуск и развитие речи, Правополушарное рисование, Волшебная
+                <div class="col-12 col-lg">
+                    <div class="card team_item">
+                        <img src="images/team3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Русова Мария</h5>
+                          <p class="card-text">Нейропсихолог, ведет группы Запуск и развитие речи, Правополушарное рисование, Волшебная
                             глина</p>
-                        <a href="#" class="btn-m">подробнее</a>
-                    </div>
+                            <a href="#" class="btn-m">подробнее</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="col">
-                    <div class="team_item">
-                        <img src="images/team4.webp" alt="">
-                        <h4>Рыбкина Антонина</h4>
-                        <p>Проводит занятия по детской йоге для малышей от 1,5 месяца до 3-х лет</p>
-                        <a href="#" class="btn-m">подробнее</a>
-                    </div>
+                <div class="col-12 col-lg">
+                    <div class="card team_item">
+                        <img src="images/team4.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Рыбкина Антонина</h5>
+                          <p class="card-text">Проводит занятия по детской йоге для малышей от 1,5 месяца до 3-х лет</p>
+                          <a href="#" class="btn-m">подробнее</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="col">
-                    <div class="team_item">
-                        <img src="images/team5.webp" alt="">
-                        <h4>Озерова Елена</h4>
-                        <p>Ведет группу «Актерское мастерство» в группах от 3 до 6 лет, от 7 до 10 лет</p>
-                        <a href="#" class="btn-m">подробнее</a>
-                    </div>
+                <div class="col-12 col-lg">
+                    <div class="card team_item">
+                        <img src="images/team5.webp" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Озерова Елена</h5>
+                          <p class="card-text">Ведет группу «Актерское мастерство» в группах от 3 до 6 лет, от 7 до 10 лет</p>
+                          <a href="#" class="btn-m">подробнее</a>
+                        </div>
+                      </div>
                 </div>
             </div>
             <a href="#" class="btn-m">Хочу приехать в гости</a>
@@ -609,7 +622,7 @@
         <div class="container">
             <h2 class="block__title">НАШИ <span>КОНТАКТЫ</span></h2>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h4><i class="flaticon-call"></i> 8 (916) 271-12-20</h4>
                     <h4>Наш email :</h4>
                     <p>centraprel@gmail.com</p>
@@ -618,7 +631,7 @@
                         пр. Ракетостроителей 3, корп 1</p>
                     <h4>Работаем с пн-пт 8.00 — 19.30</h4>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <a href="https://yandex.ru/maps/?um=constructor%3A327f09200e0b0cee77f83017a61993594b767db8d1af97e3f7603d8a94a94e44&amp;source=constructorStatic"
                         target="_blank"><img
                             src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A327f09200e0b0cee77f83017a61993594b767db8d1af97e3f7603d8a94a94e44&amp;width=450&amp;height=300&amp;lang=ru_RU"
@@ -642,21 +655,21 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                <ul>
-                    <li><a href="#">Детский центр «Апрель»</a></li>
-                    <li><a href="#">О центре</a></li>
-                    <li><a href="#">Все занятия</a></li>
-                </ul>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <ul>
+                        <li><a href="#">Детский центр «Апрель»</a></li>
+                        <li><a href="#">О центре</a></li>
+                        <li><a href="#">Все занятия</a></li>
+                    </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-6 col-md-4">
                     <ul>
                         <li><a href="#">Расписание и цены</a></li>
                         <li><a href="#">Наши правила</a></li>
                         <li><a href="#">Пользовательское соглашение</a></li>
                     </ul>
                 </div>
-                <div class="col-3 d-flex ml-auto">
+                <div class="col-3 d-none d-md-flex ml-auto">
                     <ul>
                         <li>8 (916) 271-12-20</li>
                         <li>centraprel@gmail.com</li>

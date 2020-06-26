@@ -36,7 +36,7 @@ body {
   margin-bottom: 25px;
 }
 
-.top__bar .col, .top__bar .col-5 {
+.top__bar .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ body {
           align-items: center;
 }
 
-.top__bar .col p, .top__bar .col-5 p {
+.top__bar .center p {
   margin: 0;
 }
 
@@ -61,42 +61,28 @@ body {
   margin: 0;
 }
 
-.menu {
-  background: #00a3d8;
-}
-
-.menu ul {
+.center-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
+  margin: auto;
 }
 
-.menu ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.menu {
+  background: #00a3d8;
 }
 
-.menu ul li a {
+.menu ul .nav-item .nav-link {
   color: #fff;
   font-weight: 500;
   font-size: 1.1rem;
-  padding: 15px 10px;
   margin-bottom: 2px;
 }
 
-.menu ul li a:hover {
+.menu ul .nav-item .nav-link:hover {
   text-decoration: none;
   color: #e4f1f2;
   border-bottom: 2px solid #e4f1f2;
@@ -217,6 +203,17 @@ body {
   font-size: 1.1rem;
 }
 
+.block__about-us .youtube {
+  display: block;
+  margin: 0 auto;
+}
+
+.block__about-us img {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
 .block__recall {
   background-image: url(/images/bg-recall.webp);
   background-position: center;
@@ -247,13 +244,13 @@ body {
   padding: 3rem 0;
 }
 
-.block__advantages .col {
+.block__advantages .adv-item {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.block__advantages .col i {
+.block__advantages .adv-item i {
   font-size: 70px;
   border: 2px solid #00a3d8;
   border-radius: 10px;
@@ -262,25 +259,25 @@ body {
   color: #ffba00;
 }
 
-.block__advantages .col i:hover {
+.block__advantages .adv-item i:hover {
   -webkit-box-shadow: 0px 0px 20px -3px rgba(5, 5, 5, 0.7);
           box-shadow: 0px 0px 20px -3px rgba(5, 5, 5, 0.7);
 }
 
-.block__advantages .col i::before {
+.block__advantages .adv-item i::before {
   margin: 15px;
 }
 
-.block__advantages .col p {
+.block__advantages .adv-item p {
   max-width: 300px;
   margin: 0 auto;
 }
 
-.block__advantages .col a {
+.block__advantages .adv-item a {
   color: #363636;
 }
 
-.block__advantages .col a:hover {
+.block__advantages .adv-item a:hover {
   text-decoration: none;
 }
 
@@ -302,6 +299,7 @@ body {
 
 .block__studios img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .block__studios .row a {
@@ -326,10 +324,17 @@ body {
   border-radius: 1rem;
   -webkit-box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.4);
           box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cheked__item svg {
   fill: #ffba00;
+  margin-left: 5px;
 }
 
 .cheked__item .cstm {
@@ -350,14 +355,27 @@ body {
   width: 90%;
 }
 
+.block__our-team .card-body {
+  position: relative;
+}
+
 .block__our-team .team_item {
-  height: 450px;
+  border: none;
+  height: 500px;
+  max-width: 200px;
+}
+
+.block__our-team .team_item img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .block__our-team .team_item .btn-m {
   position: absolute;
   bottom: 0;
-  left: 2rem;
+  width: 100%;
+  right: 0;
 }
 
 .block__reviews {
@@ -435,6 +453,10 @@ body {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
+.block__contacts img {
+  width: 100%;
+}
+
 .block__contacts h4 i {
   color: #00a3d8;
 }
@@ -496,5 +518,49 @@ body {
 
 .footer .copyright {
   text-align: center;
+}
+
+/* media */
+@media (max-width: 576px) {
+  .btn-m {
+    margin: 1rem 0;
+  }
+  .adv-item {
+    margin: 1rem 0;
+  }
+  .team_item {
+    height: 550px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews__item {
+    height: 500%;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    margin: 0 auto;
+  }
+  #slider1 {
+    margin-bottom: 1rem;
+  }
+  .team_item {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contacts p {
+    font-size: 1.1rem;
+  }
+  .btn-m {
+    font-size: 0.8rem;
+  }
+  .quote {
+    padding-left: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
