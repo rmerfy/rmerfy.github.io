@@ -25,6 +25,12 @@ body {
   background: #ffe500;
 }
 
+.flaticon-play-button::before {
+  font-size: 12px;
+  padding-right: 5px;
+  color: #00a3d8;
+}
+
 .top__bar .logo {
   display: block;
   margin-bottom: 25px;
@@ -98,7 +104,7 @@ body {
 }
 
 .block__main {
-  background-image: url(/images/bg.jpg);
+  background-image: url(/images/bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   padding: 9rem 0;
@@ -113,6 +119,29 @@ body {
 .block__main p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.block__main .icon-bar {
+  position: absolute;
+  right: 0;
+}
+
+.block__main .icon-bar a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.block__main .icon-bar a:hover {
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.6), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.block__main .icon-bar i::before {
+  font-size: 3rem;
+}
+
+.block__main .icon-bar li {
+  list-style-type: none;
 }
 
 .block__title {
@@ -189,7 +218,7 @@ body {
 }
 
 .block__recall {
-  background-image: url(/images/bg-recall.jpg);
+  background-image: url(/images/bg-recall.webp);
   background-position: center;
   background-repeat: no-repeat;
   padding: 4rem 0;
@@ -224,6 +253,24 @@ body {
   font-weight: 700;
 }
 
+.block__advantages .col i {
+  font-size: 70px;
+  border: 2px solid #00a3d8;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.4);
+          box-shadow: 0px 0px 10px -3px rgba(5, 5, 5, 0.4);
+  color: #ffba00;
+}
+
+.block__advantages .col i:hover {
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(5, 5, 5, 0.7);
+          box-shadow: 0px 0px 20px -3px rgba(5, 5, 5, 0.7);
+}
+
+.block__advantages .col i::before {
+  margin: 15px;
+}
+
 .block__advantages .col p {
   max-width: 300px;
   margin: 0 auto;
@@ -238,7 +285,7 @@ body {
 }
 
 .block__studios {
-  background-image: url(/images/bg-stydii.jpg);
+  background-image: url(/images/bg-stydii.webp);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -249,9 +296,19 @@ body {
   font-size: 3rem;
 }
 
+.block__studios .description {
+  font-size: 2rem;
+}
+
+.block__studios img {
+  border-radius: 10px;
+}
+
 .block__studios .row a {
   color: #363636;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .block__studios .row a:hover {
@@ -273,6 +330,10 @@ body {
 
 .cheked__item svg {
   fill: #ffba00;
+}
+
+.cheked__item .cstm {
+  fill: #00a3d8;
 }
 
 .block__our-team {
@@ -307,6 +368,7 @@ body {
   display: block;
   margin: 2rem auto;
   max-width: 800px;
+  height: 450px;
 }
 
 .reviews__item p {
@@ -348,7 +410,7 @@ body {
 }
 
 .block__trial-lesson {
-  background-image: url(/images/bg-test.jpg);
+  background-image: url(/images/bg-test.webp);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -366,10 +428,51 @@ body {
 }
 
 .block__contacts {
-  background-image: url(/images/bg-contacts.jpg);
+  background-image: url(/images/bg-contacts.webp);
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 3rem;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.block__contacts h4 i {
+  color: #00a3d8;
+}
+
+.block__contacts h5 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.block__contacts .contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.block__contacts .contacts-social a {
+  color: #015e7e;
+  text-decoration: none;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.block__contacts .contacts-social a:hover {
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.6), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.block__contacts .contacts-social i::before {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.block__contacts .contacts-social li {
+  list-style-type: none;
+  margin: 0 5px;
 }
 
 .footer {
