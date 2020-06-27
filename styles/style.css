@@ -223,21 +223,22 @@ body {
 }
 
 .block__recall h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .block__recall p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 700px;
   margin: 0 auto;
 }
 
-.block__recall #recall {
-  padding: 2rem 0;
+.block__recall h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
-.block__recall h4 {
-  font-size: 2.5rem;
+.cntr {
+  margin: 1rem auto;
 }
 
 .block__advantages .row {
@@ -531,6 +532,16 @@ body {
   .team_item {
     height: 550px !important;
   }
+  .block__trial-lesson {
+    padding: 2rem 0;
+  }
+  .block__trial-lesson p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .block__trial-lesson .subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -549,6 +560,15 @@ body {
   .team_item {
     margin: 0 auto;
     margin-bottom: 1rem;
+  }
+  .block__recall h4 {
+    font-size: 1.3rem;
+  }
+  .block__recall h3 {
+    font-size: 1.8rem;
+  }
+  .block__recall p {
+    font-size: 1rem;
   }
 }
 

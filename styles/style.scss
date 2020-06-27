@@ -199,19 +199,21 @@ body {
     padding: 4rem 0;
     text-align: center;
     h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         max-width: 700px;
         margin: 0 auto;
     }
-    #recall {
-        padding: 2rem 0;
-    }
     h4 {
-        font-size: 2.5rem;
+        margin-top: 1rem;
+        font-size: 2rem;
     }
+    
+}
+.cntr {
+    margin: 1rem auto;
 }
 
 .block__advantages {
@@ -464,6 +466,16 @@ body {
     .team_item {
         height: 550px !important;
     }
+    .block__trial-lesson {
+        padding: 2rem 0;
+        p {
+            font-size: 1rem;
+            padding: 1rem 0;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+        }
+    }
  }
 
 // Малые девайсы («ландшафтные», < 768px)
@@ -485,6 +497,17 @@ body {
     .team_item {
         margin: 0 auto;
         margin-bottom: 1rem;
+    }
+    .block__recall {
+        h4 {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1rem;
+        }
     }
  }
 
