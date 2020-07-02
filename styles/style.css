@@ -4,6 +4,10 @@ body {
   color: #363636;
 }
 
+li {
+  list-style-type: none;
+}
+
 .btn-m {
   display: inline-block;
   text-transform: uppercase;
