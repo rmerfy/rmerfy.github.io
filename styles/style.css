@@ -416,6 +416,7 @@ li {
 
 .reviews__item .reviews__author span {
   margin-left: 1rem;
+  line-height: 1;
 }
 
 .reviews__item .reviews__author img {
